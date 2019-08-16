@@ -1,0 +1,33 @@
+Concorrência vs Paralelismo
+
+Paralelismo: Quando você está fazendo duas coisas exatamente ao mesmo tempo. Só é possível se tem múltiplos processadores físicos. 
+Executar código paralelamente.
+Custa mais que a concorrência.
+Existe overhead adicional. Via de regra deve ficar mais rápido por ter mais processadores, porém devido a sobrecarga de controle pode deixar mais lenta (overhead).
+Go é uma linguagem concorrente. 
+
+Concorrência: Capacidade de administrar múltiplas tarefas e pode ocorrer apenas com um processador físico. 
+Intercalar (administrar) vários processos ao mesmo tempo.
+Temos os escalonadores que ficam escalonando
+as tarefas de acordo com prioridade. Administra o tempo para que faça múltiplas tarefas simultâneas concorrendo entre si.
+
+Concorrência viabiliza o paralelismo quando houver julgamento que é interessante dividir em multiprocessadores.
+
+Existem situações que a concorrência é mais interessante por conta do overhead adicional do paralelismo!
+Paralelismo exige muito mais do SO e do hardware.
+Na concorrência não tem o trabalho de juntar tarefas de processadores diferentes, porque está tudo ali, você só está fornecendo um tempo de processamento
+diferente para cada tarefa no mesmo processador.
+
+É importante que você modele o software de forma concorrente para que o software seja utilizado da melhor forma possível.
+Concorrência - é uma forma de estruturar o seu sistema. É a composição de processos (tipicamente funções) que executam de forma independente.
+Não significa que em determinado momento esses processos tenham que ser agrupados. Dispara de forma assíncrona e junta de forma inerente na linguagem.
+
+Se você faz o software muito sequencial é importante pensar que pode ser mais interessante pensar na composição de funções e modelar os processos para que
+possa ter os benefícios da concorrência.
+
+
+
+
+
+
+
